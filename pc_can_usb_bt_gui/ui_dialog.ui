@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1026</width>
+    <height>438</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="button_tx0">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>310</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Transmit</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="table_tx">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>270</y>
+     <width>621</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="rowCount">
+    <number>1</number>
+   </property>
+   <property name="columnCount">
+    <number>10</number>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>60</number>
+   </attribute>
+   <row/>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Length</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>B0</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>B1</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>B2</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>B3</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>B4</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>B5</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>B6</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>B7</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="button_clr_tx">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>270</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clean content</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>240</y>
+     <width>311</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>CAN BUS Transmit (hex format)</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber_sec">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>70</y>
+     <width>251</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="digitCount">
+    <number>8</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>20</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>CAN Received (hex format)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_clr_rx">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>60</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear all</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>60</y>
+     <width>501</width>
+     <height>161</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_clr_tx</sender>
+   <signal>clicked()</signal>
+   <receiver>table_tx</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>896</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>620</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_clr_rx</sender>
+   <signal>clicked()</signal>
+   <receiver>listWidget</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>906</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>590</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

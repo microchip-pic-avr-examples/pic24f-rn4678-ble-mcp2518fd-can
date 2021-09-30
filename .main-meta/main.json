@@ -4,21 +4,21 @@
    "content":{
       "metaDataVersion":"1.0.0",
       "name":"com.microchip.mplabx.project.pic24f-rn4678-ble-mcp2518fd-can",
-      "version":"x.x.x",
-      "displayName":"xxxxxxxxxxxxxxx",
+      "version":"1.0.0",
+      "displayName":"PIC24F – Bluetooth and CAN Demo",
       "projectName":"pic24f-rn4678-ble-mcp2518fd-can",
-      "shortDescription":"xxxxxxxxxxxxxxx",
+      "shortDescription":"This example code demonstrates how to interface a PIC24F MCU with a RN4678 Bluetooth module and MCP2518FD external CAN FD controller using UART and SPI peripherals respectively",
       "ide":{
          "name":"MPLABX",
-         "semverRange":">=5.40.0"
+         "semverRange":">=5.45.0"
       },
       "compiler":{
          "name":"XC16",
          "semverRange":"^1.50.0"
       },
       "dfp":{
-         "name":"xxxxxxxxxxxxxxx",
-         "semverRange":">=x.x.x"
+         "name":"PIC24F-GP-GU_DFP",
+         "semverRange":">=1.0.59"
       },
 	  "configurator": {
          "name": "MCC",
@@ -30,17 +30,21 @@
          "content":{
             "metaDataVersion":"1.0.0",
             "category":"com.microchip.device",
-            "name":"xxxxxxxxxxxxxxx",
+            "name":"PIC24FJ32GU202",
             "versionRange":"*"
          }
       },
       "peripherals":[
-         "GPIO",
-         "UART"
+         "SPI",
+         "UART",
+		 "USB",
+		 "I2C"
       ],
       "keywords":[
-         "GPIO",
-         "UART"
+         "CAN",
+         "CAN-FD",
+		 "Bluetooth",
+		 "USB"
       ]
    }
 }
