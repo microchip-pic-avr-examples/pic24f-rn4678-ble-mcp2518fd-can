@@ -82,7 +82,18 @@ pipeline {
             }
         }
 		
-       
+		
+		//MisraCheck code analysis 
+        stage('MISRA Check') {
+            steps {
+                script {
+				    misraCheck(
+                        sourceProjectPath: "${env.MPLABX_PROJECT_SOURCE}"
+                    )
+                }
+            }
+        }
+        
         // Validate main.json file
         stage('Validate main.json') {            
             steps {
