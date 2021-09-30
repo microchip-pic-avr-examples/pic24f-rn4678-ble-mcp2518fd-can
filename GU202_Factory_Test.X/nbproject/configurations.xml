@@ -41,6 +41,7 @@
       <itemPath>drv_canfdspi_api.h</itemPath>
       <itemPath>drv_canfdspi_defines.h</itemPath>
       <itemPath>drv_canfdspi_register.h</itemPath>
+      <itemPath>OLED_FONTS.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -266,6 +267,11 @@
         <property key="relaxed-math" value="false"/>
         <property key="save-temps" value="false"/>
       </C30Global>
+      <pk4hybrid>
+        <property key="memories.programmemory.ranges" value="0-aeff"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/MCU16CE/pic24f-rn4678-ble-mcp2518fd-can/GU202_Factory_Test.X/debug/default/GU202_Factory_Test_ptg"/>
+      </pk4hybrid>
       <snap>
         <property key="ADC 1" value="true"/>
         <property key="AutoSelectMemRanges" value="auto"/>

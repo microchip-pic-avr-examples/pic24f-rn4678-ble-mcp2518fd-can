@@ -8,7 +8,7 @@
 
 //extern void ReadEncoder(void);
 uint8_t     OLED_Data[4] ;
-#include "OLED_FONTs.c"
+#include "OLED_FONTs.h"
 void OLED_Init(void)
 {
 //    __delay_us(50);
