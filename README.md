@@ -1,6 +1,6 @@
 ![image](images/microchip.jpg) 
 
-## %repoDescritpion%
+## PIC24F RN4678 BLE MCP2518FD CAN
 
 Board Image if any.
 
