@@ -37,12 +37,12 @@
       "peripherals":[
          "SPI",
          "UART",
-		 "SB",
+		 "USB",
 		 "I2C"
       ],
       "keywords":[
          "CAN",
-         "CAN FD",
+         "CAN-FD",
 		 "Bluetooth",
 		 "USB"
       ]
